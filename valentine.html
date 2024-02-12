@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Will You Be My Valentine?</title>
+<style>
+    body {
+        padding-top: 10%;
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+    h1 {
+        color: rgb(126, 9, 9);
+    }
+    button {
+        padding: 20px 30px;
+        font-size: 26px;
+        background-color: rgb(243, 107, 53);
+        color: white;
+        border: solid;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body background="2.jpg">
+<h1>Would You Be My Valentine?</h1>
+<button onclick="respond()">Yes</button>
+<button onclick="refuse()">No</button>
+
+<script>
+    function respond() {
+        function redirectToNextPage() {
+    window.location.href = "mygirl.html";
+}
+
+setTimeout(redirectToNextPage, 50);
+    }
+
+    function refuse() {
+        alert("Wrong Answer, Try Again!");
+    }
+</script>
+</body>
+</html>
